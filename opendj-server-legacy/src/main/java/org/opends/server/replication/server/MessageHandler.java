@@ -309,7 +309,13 @@ class MessageHandler extends MonitorProvider<MonitorProviderCfg>
             // getting the server out of state "not following".
             if (lateQueue.isEmpty() && msgQueue.isEmpty())
             {
-              following = true;
+              try (DBCursor<UpdateMsg> cursor = replicationServerDomain.getCursorFrom(serverState))
+              {
+                if (!cursor.next())
+                {
+                  following = true;
+                }
+              }
             }
           }
           if (updateServerState(msg))
