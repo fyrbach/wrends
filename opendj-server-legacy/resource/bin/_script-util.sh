@@ -14,13 +14,13 @@
 #
 # Copyright 2008-2010 Sun Microsystems, Inc.
 # Portions Copyright 2010-2016 ForgeRock AS.
-# Portions Copyright 2022 Wren Security
+# Portions Copyright 2022-2025 Wren Security
 
 #
 # Display an error message
 #
 display_java_not_found_error() {
-  echo "Please set OPENDJ_JAVA_HOME to the root of a Java 8 (or higher) installation"
+  echo "Please set OPENDJ_JAVA_HOME to the root of a Java 11 (or higher) installation"
   echo "or edit the java.properties file to specify the Java version to be used"
 }
 
@@ -124,9 +124,9 @@ print_error_message() {
   else
     echo "The detected Java binary is: ${OPENDJ_JAVA_BIN}"
   fi
-  echo "You must specify the path to a valid Java 8 or higher version."
+  echo "You must specify the path to a valid Java 11 or higher version."
   echo "The procedure to follow is to set the environment variable OPENDJ_JAVA_HOME"
-  echo "to the root of a valid Java 8 installation."
+  echo "to the root of a valid Java 11 installation."
   echo "If you want to have specific Java settings for each command line you must"
   echo "edit the properties file specifying the Java binary and/or the Java arguments"
   echo "for each command line.  The Java properties file is located in:"

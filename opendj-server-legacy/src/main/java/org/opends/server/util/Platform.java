@@ -13,6 +13,7 @@
  *
  * Copyright 2009-2010 Sun Microsystems, Inc.
  * Portions Copyright 2013-2016 ForgeRock AS.
+ * Portions Copyright 2025 Wren Security.
  */
 
 package org.opends.server.util;
@@ -63,7 +64,7 @@ public final class Platform
   private static final PlatformIMPL IMPL;
 
   /** The minimum java supported version. */
-  public static final String JAVA_MINIMUM_VERSION_NUMBER = "8";
+  public static final String JAVA_MINIMUM_VERSION_NUMBER = "11";
 
   static
   {

@@ -14,6 +14,7 @@
 #
 # Copyright 2008-2009 Sun Microsystems, Inc.
 # Portions Copyright 2016 ForgeRock AS.
+# Portions Copyright 2025 Wren Security.
 
 #
 # function that sets the java home
@@ -36,7 +37,7 @@ set_java_home_and_args() {
           then
             export OPENDJ_JAVA_BIN
           else
-            echo "Please set OPENDJ_JAVA_HOME to the root of a Java 7 (or later) installation"
+            echo "Please set OPENDJ_JAVA_HOME to the root of a Java 11 (or later) installation"
             exit 1
           fi
         else

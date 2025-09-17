@@ -13,6 +13,7 @@ rem information: "Portions Copyright [year] [name of copyright owner]".
 rem
 rem Copyright 2008-2009 Sun Microsystems, Inc.
 rem Portions copyright 2013-2016 ForgeRock AS.
+rem Portions copyright 2025 Wren Security.
 
 set SET_JAVA_HOME_AND_ARGS_DONE=false
 set SET_ENVIRONMENT_VARS_DONE=false
@@ -105,7 +106,7 @@ goto endJavaHomeAndArgs
 :noJavaFound
 echo ERROR:  Could not find a valid Java binary to be used.
 echo You must set the environment variable OPENDJ_JAVA_HOME
-echo to the root of a valid Java 7 (or higher) installation.
+echo to the root of a valid Java 11 (or higher) installation.
 pause
 exit /B 1
 
